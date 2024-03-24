@@ -1,0 +1,14 @@
+---
+services:
+  doujinshi-db:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=wiki
+      - MYSQL_ROOT_PASSWORD=DCJBD2KqlPVYsCg
+    volumes:
+      - db-data:/var/lib/mysql #db data
+
+volumes:
+  db-data:

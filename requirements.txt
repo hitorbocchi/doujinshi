@@ -1,0 +1,6 @@
+fastapi
+sqlalchemy
+uvicorn[standard]
+python-dotenv
+pymysql
+fastapi-pagination
